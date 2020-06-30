@@ -36,6 +36,12 @@ nav {
     top: 0;
 }
 
+main {
+    background-color: #141922;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 footer {
     width: 100%;
     height: 80px;
@@ -71,31 +77,32 @@ footer {
 }
 
 /* HEADER */
-/* DA CANCELLARE */
-header p {
-    color: white;
-    margin: 0 auto;
-    font-size: 30px;
-}
-
 .nav-menu {
     width: 60%;
     height: 80px;
     margin-left: calc(20% + 200px / 2);
 }
 
-.playlist-header {
+/* MAIN */
+/* DA CANCELLARE */
+main p {
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.playlist-main {
     width: calc(100% - 200px);
     padding-top: 80px;
     margin-left: 200px;
 }
 
-.header-box {
+.main-box {
     width: 100%;
     height: 300px;
 }
 
-.header-box-2 {
+.main-box-2 {
     width: 100%;
     height: 380px;
 }
@@ -114,6 +121,7 @@ header p {
 .list-box {
     width: 150px;
     height: 250px;
+    margin-left: 20px;
 }
 
 /* PLAYER */
