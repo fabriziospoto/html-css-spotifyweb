@@ -86,14 +86,18 @@ footer {
 /* MAIN */
 /* DA CANCELLARE */
 main p {
+    color: #505359;
+    font-size: 15px;
+}
+
+main h3 {
     color: white;
-    margin: 0 auto;
-    font-size: 30px;
 }
 
 .playlist-main {
     width: calc(100% - 200px);
     padding-top: 80px;
+    padding-bottom: 80px;
     margin-left: 200px;
 }
 
@@ -102,14 +106,14 @@ main p {
     height: 300px;
 }
 
-.main-box-2 {
-    width: 100%;
-    height: 380px;
-}
-
 .box-title {
     width: 100%;
     height: 50px;
+    padding-left: 20px;
+}
+
+.box-title p {
+    line-height: 25px;
 }
 
 .list {
@@ -122,6 +126,7 @@ main p {
     width: 150px;
     height: 250px;
     margin-left: 20px;
+    padding-top: 20px;
 }
 
 /* PLAYER */
