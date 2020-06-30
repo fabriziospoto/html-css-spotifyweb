@@ -5,7 +5,11 @@
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', sans-serif;
 }
 
 aside {
@@ -19,8 +23,17 @@ aside {
 
 header {
     width: 100%;
-    height: 100vh;
+    /* height: 1060px; */
     background-color: #141922;
+}
+
+nav {
+    width: 100%;
+    /* height: 80px; */
+    background-color: #141922;
+    /* background-color: aquamarine; */
+    position: fixed;
+    top: 0;
 }
 
 footer {
@@ -30,4 +43,94 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 2;
+}
+
+/* BORDERS DA CANCELLARE */
+.b-w {
+    border: 1px solid white;
+}
+
+.b-b{
+    border: 1px solid black;
+}
+
+/* ASIDE */
+.logo {
+    width: 100%;
+    height: 80px;
+}
+
+.aside-menu {
+    width: 100%;
+    height: 90px;
+}
+
+.playlist {
+    width: 100%;
+    height: 300px;
+}
+
+/* HEADER */
+/* DA CANCELLARE */
+header p {
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.nav-menu {
+    width: 60%;
+    height: 80px;
+    margin-left: calc(20% + 200px / 2);
+}
+
+.playlist-header {
+    width: calc(100% - 200px);
+    padding-top: 80px;
+    margin-left: 200px;
+}
+
+.header-box {
+    width: 100%;
+    height: 300px;
+}
+
+.header-box-2 {
+    width: 100%;
+    height: 380px;
+}
+
+.box-title {
+    width: 100%;
+    height: 50px;
+}
+
+.list {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.list-box {
+    width: 150px;
+    height: 250px;
+}
+
+/* PLAYER */
+.played {
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+
+.player {
+    width: 60%;
+    height: 80px;
+    float: left;
+}
+
+.volume {
+    width: 20%;
+    height: 80px;
+    float: right;
 }
