@@ -232,7 +232,12 @@ main h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    /* display: none; */
+}
+
+.hover-icon {
+    font-size: 50px;
+    color: white;
 }
 
 .pic:hover {
@@ -254,34 +259,32 @@ main h5 {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-
-
 }
+
 .pic-3 {
     background-image: url("https://www.ilgiradischi.com/wp-content/uploads/2019/02/Moon-600x600.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .pic-4 {
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/81ZCBWAPbiL._AC_SL1300_.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
 .pic-5 {
     background-image: url("https://www.ilfriuli.it/writable/images/andre-old_Thumb_HighlightCenter214428.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-
-
 }
+
 .pic-6 {
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/815LGpEtiwL._AC_SL1400_.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .titles {
@@ -378,14 +381,15 @@ footer i {
 .progress {
     width: 300px;
     height: 4px;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
     margin: 0 15px;
 }
 
 .vol-up {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
     width: 110px;
     height: 4px;
+}
+
+.gradient {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
 }
