@@ -24,7 +24,7 @@ aside {
     background-color: black;
     position: fixed;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 header {
@@ -40,6 +40,7 @@ nav {
     /* background-color: aquamarine; */
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 main {
@@ -54,7 +55,7 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* BORDERS DA CANCELLARE */
@@ -70,12 +71,13 @@ footer {
 aside p {
     color: #a3a3a3;
     font-weight: bold;
+    font-size: 15px;
 }
 
 aside i {
     color: #a3a3a3;
     font-size: 25px;
-    padding: 5px 10px 0 20px;
+    padding: 5px 10px 0 15px;
     float: left;
 }
 
@@ -105,7 +107,7 @@ aside i {
 
 aside img {
     width: 120px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .aside-box {
@@ -124,7 +126,7 @@ aside img {
 }
 
 .aside-ml {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 /* HEADER */
@@ -175,6 +177,12 @@ main h3 {
     color: white;
 }
 
+main h5 {
+    color: white;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
 .playlist-main {
     width: calc(100% - 200px);
     padding-top: 80px;
@@ -184,7 +192,7 @@ main h3 {
 
 .main-box {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .box-title {
@@ -199,8 +207,9 @@ main h3 {
 
 .list {
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     display: flex;
+    flex-wrap: wrap;
 }
 
 .list-box {
@@ -210,11 +219,130 @@ main h3 {
     padding-top: 20px;
 }
 
+.pic {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.h-icon-box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.pic:hover {
+    filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: inline; */
+}
+
+.pic-1 {
+    background-image: url("https://spettacolo.periodicodaily.com/wp-content/uploads/2019/12/led-zeppelin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.pic-2 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Doors_1968.JPG/1200px-The_Doors_1968.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+
+}
+.pic-3 {
+    background-image: url("https://www.ilgiradischi.com/wp-content/uploads/2019/02/Moon-600x600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-4 {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81ZCBWAPbiL._AC_SL1300_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.pic-5 {
+    background-image: url("https://www.ilfriuli.it/writable/images/andre-old_Thumb_HighlightCenter214428.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+
+}
+.pic-6 {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/815LGpEtiwL._AC_SL1400_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.titles {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
 /* PLAYER */
+footer p {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .played {
     width: 20%;
     height: 80px;
     float: left;
+}
+
+.rep {
+    width: 30%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.album {
+    width: 40px;
+    height: 40px;
+    background: url("https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwb6e926d3/images/3/0/9/8/309886.jpg?sw=1000&sh=800&sm=fit&sfrm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.names {
+    width: 40%;
+    height: 80px;
+    float: left;
+}
+
+.title-margin {
+    margin-top: 25px;
+}
+
+.pref-icons {
+    width: 30%;
+    height: 80px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+footer i {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
 }
 
 .player {
@@ -223,8 +351,41 @@ main h3 {
     float: left;
 }
 
+.player-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-player {
+    font-size: 30px;
+}
+
+.cmd {
+    font-size: 15px;
+}
+
 .volume {
     width: 20%;
     height: 80px;
     float: right;
+    display: flex;
+    align-items: center;
+}
+
+.progress {
+    width: 300px;
+    height: 4px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
+    margin: 0 15px;
+}
+
+.vol-up {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
+    width: 110px;
+    height: 4px;
 }
