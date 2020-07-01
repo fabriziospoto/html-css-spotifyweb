@@ -167,7 +167,23 @@ nav p {
 }
 
 /* MAIN */
-/* DA CANCELLARE */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141922;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5d5f64;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5d5f64;
+}
+
 main p {
     color: #6e7176;
     font-size: 15px;
@@ -226,65 +242,57 @@ main h5 {
 }
 
 .h-icon-box {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* display: none; */
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.h-icon-box-2 {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .hover-icon {
-    font-size: 50px;
-    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
-.pic:hover {
-    filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.5);
-    /* display: inline; */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
 }
 
-.pic-1 {
-    background-image: url("https://spettacolo.periodicodaily.com/wp-content/uploads/2019/12/led-zeppelin.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.pic-2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/The_Doors_1968.JPG/1200px-The_Doors_1968.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
+.pic:hover img {
+    filter: blur(2px);
 }
 
-.pic-3 {
-    background-image: url("https://www.ilgiradischi.com/wp-content/uploads/2019/02/Moon-600x600.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.pic:hover .overlay {
+    display: block;
 }
 
-.pic-4 {
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81ZCBWAPbiL._AC_SL1300_.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.pic-5 {
-    background-image: url("https://www.ilfriuli.it/writable/images/andre-old_Thumb_HighlightCenter214428.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.border-r {
     border-radius: 50%;
 }
 
-.pic-6 {
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/815LGpEtiwL._AC_SL1400_.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .titles {
