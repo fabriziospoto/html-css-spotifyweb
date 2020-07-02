@@ -223,6 +223,27 @@ nav p {
     line-height: 80px;
 }
 
+.appear {
+    width: 200px;
+    height: 240px;
+    display: none;
+    position: absolute;
+    right: 50px;
+    background-color: #141922;
+    text-transform: uppercase;
+    border: 1px solid #6e7176;
+}
+
+ul li {
+    list-style-type: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid #6e7176;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 /* MAIN */
 ::-webkit-scrollbar {
   width: 12px;
@@ -475,6 +496,10 @@ footer i {
     }
 
     .hamburger {
+        display: block;
+    }
+
+    .menu-color:hover .appear {
         display: block;
     }
 
