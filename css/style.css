@@ -52,6 +52,7 @@ footer {
 }
 
 /* ASIDE */
+
 aside p {
     color: #a3a3a3;
     font-weight: bold;
@@ -95,6 +96,10 @@ aside i {
 
 .user {
     width: 100%;
+    height: calc(100% - 580px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .install {
@@ -511,6 +516,7 @@ footer i {
         flex-direction: column;
         justify-content: center;
     }
+
 }
 
 @media screen and (max-width: 600px) {
