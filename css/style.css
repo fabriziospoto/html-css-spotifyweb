@@ -10,9 +10,9 @@ clearfix::after {
     clear: both;
 }
 
-.container {
-    /* max-width: 1200px; */
-}
+/* .container {
+    max-width: 1200px;
+} */
 
 h1, h2, h3, h4, h5, h6, p, span {
     font-family: 'Roboto', sans-serif;
@@ -24,7 +24,7 @@ aside {
     background-color: black;
     position: fixed;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 header {
@@ -40,7 +40,7 @@ nav {
     /* background-color: aquamarine; */
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 main {
@@ -55,7 +55,7 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
-    z-index: 3;
+    z-index: 4;
 }
 
 /* BORDERS DA CANCELLARE */
@@ -87,6 +87,10 @@ aside i {
     line-height: 100px;
 }
 
+.logo-responsive {
+    display: none;
+}
+
 .aside-menu {
     width: 100%;
     height: 120px;
@@ -103,6 +107,46 @@ aside i {
 .playlist {
     width: 100%;
     height: 300px;
+}
+
+.user {
+    width: 100%;
+    /* position: relative; */
+}
+
+.install {
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    /* line-height: 40px; */
+
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: baseline; */
+}
+
+.install i, .install p {
+    font-size: 12px;
+    /* padding-left: 0; */
+}
+
+.mp {
+    margin: 0; padding: 0;
+}
+
+.pad {
+    padding-left: 20px;
+}
+
+.center-install {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.brd-b {
+    border-bottom: 1px solid #a3a3a3;
+    width: 80%;
+    margin: 0 auto;
 }
 
 aside img {
@@ -164,6 +208,19 @@ nav p {
     bottom: 6%;
     left: 32%;
     border-radius: 10px;
+}
+
+.hamburger {
+    width: 15%;
+    height: 80px;
+    float: right;
+    display: none;
+}
+
+.menu-color {
+    color: #6e7176;
+    font-size: 40px;
+    line-height: 80px;
 }
 
 /* MAIN */
@@ -326,10 +383,13 @@ footer p {
 .album {
     width: 40px;
     height: 40px;
-    background: url("https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwb6e926d3/images/3/0/9/8/309886.jpg?sw=1000&sh=800&sm=fit&sfrm=jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     float: left;
+}
+
+.album img {
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .names {
@@ -400,4 +460,156 @@ footer i {
 .gradient {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(115,111,110,1) 31%);
+}
+
+
+@media screen and (max-width: 1199px) {
+    .vol-up {
+        width: 60px
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .player {
+        width: 40%;
+    }
+
+    .progress {
+        width: 200px;
+    }
+
+    .played,
+    .volume {
+        width: 30%;
+    }
+
+    .vol-up {
+        width: 60px
+    }
+}
+
+@media screen and (max-width: 786px) {
+    footer i {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .progress {
+        width: 100px;
+    }
+
+    .pref-icons {
+        width: 20%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer .names p {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    .pref-icons {
+        width: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer i {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .logo img {
+        display: none;
+    }
+
+    .logo-responsive {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .aside-box p {
+        display: none;
+    }
+
+    .aside-box i {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .fa-plus-square {
+        display: none;
+    }
+
+    .user p {
+        display: none;
+    }
+
+    .brd-b {
+        border-bottom: 0px solid black;
+    }
+
+    .install {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 50px;
+    }
+
+    .playlist-main {
+        width: calc(100% - 50px);
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 50px;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    .rep {
+        width: 50%;
+    }
+
+    .names {
+        width: 0%;
+    }
+
+    .pref-icons {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vol-up {
+        display: none;
+    }
+
+    .volume {
+        justify-content: center;
+        align-items: center;
+    }
 }
