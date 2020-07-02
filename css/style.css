@@ -10,10 +10,6 @@ clearfix::after {
     clear: both;
 }
 
-/* .container {
-    max-width: 1200px;
-} */
-
 h1, h2, h3, h4, h5, h6, p, span {
     font-family: 'Roboto', sans-serif;
 }
@@ -29,15 +25,12 @@ aside {
 
 header {
     width: 100%;
-    /* height: 1060px; */
     background-color: #141922;
 }
 
 nav {
     width: 100%;
-    /* height: 80px; */
     background-color: #141922;
-    /* background-color: aquamarine; */
     position: fixed;
     top: 0;
     z-index: 2;
@@ -56,15 +49,6 @@ footer {
     position: fixed;
     bottom: 0;
     z-index: 4;
-}
-
-/* BORDERS DA CANCELLARE */
-.b-w {
-    border: 1px solid white;
-}
-
-.b-b{
-    border: 1px solid black;
 }
 
 /* ASIDE */
@@ -111,23 +95,16 @@ aside i {
 
 .user {
     width: 100%;
-    /* position: relative; */
 }
 
 .install {
     width: 100%;
     height: 40px;
     padding-top: 12px;
-    /* line-height: 40px; */
-
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: baseline; */
 }
 
 .install i, .install p {
     font-size: 12px;
-    /* padding-left: 0; */
 }
 
 .mp {
@@ -238,7 +215,7 @@ ul li {
     list-style-type: none;
     height: 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     border-bottom: 1px solid #6e7176;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -286,7 +263,6 @@ main h5 {
 
 .main-box {
     width: 100%;
-    /* height: 300px; */
 }
 
 .box-title {
@@ -301,7 +277,6 @@ main h5 {
 
 .list {
     width: 100%;
-    /* height: 250px; */
     display: flex;
     flex-wrap: wrap;
 }
